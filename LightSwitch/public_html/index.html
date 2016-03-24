@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="MyCSS.css">
+    </head>
+    <body>
+        <div id = "wrapper">
+        <img id="myImage" onclick="changeImage()" src="Images/LightBulbOFF.png" style ="width:25%; height:25%;">
+
+        <h2>Click to turn the light on!</h2>
+        </div>
+        <script>
+            
+            function changeImage(){
+            var image = document.getElementById('myImage');
+            if (image.src.match("Images/LightBulbOFF.png")) {
+                image.src = "Images/LightBulbON.png";
+                     } else {
+                image.src = "Images/LightBulbOFF.png";
+                }
+                }
+            
+        </script>
+    </body>
+</html>
